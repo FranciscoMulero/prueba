@@ -3,17 +3,34 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>a</title>
-        <link rel="stylesheet" href="./style.css">
+        <title>Document</title>
+        <script type="module" src="./code/code.js"></script>
     </head>
     <body>
-        <header></header>
-        <div class="b">
-            <div class="estrella">
-                <img src="./images.png">
-            </div>
-        </div>
-        <footer></footer>
-
+        <h1>Empleados</h1>
+        
+        <label for="eInput">Selecciona un empleado: </label>
+        <input type="text" list="eDtlsEmpleados" id="eInput">
+        <datalist id="eDtlsEmpleados">
+        </datalist>
+        <br>
+        <br>
+        <section>
+            <label>Nombre: </label>
+            <input type="text" disabled id="eInput1">
+            <br>
+            <label>Apellido: </label>
+            <input type="text" disabled id="eInput2">
+            <br>
+            <label>Edad: </label>
+            <input type="text" disabled id="eInput3">
+            <br>
+            <label>Categoría: </label>
+            <input type="text" disabled id="eInput4">
+            <br>
+            <label>Salario: </label>
+            <input type="text" disabled id="eInput5">
+            <br>
+        </section>
     </body>
 </html>
