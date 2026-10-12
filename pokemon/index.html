@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <script type="module">
+            import {pokemons} from './pokemons.js';
+            'use strict';
+            const vSelect = document.getElementById('eSelect');
+
+            for(const pokemon of pokemons){
+                const vOption = document.createElement('option');
+                vOption.setAttribute('value', pokemon.url.split('/')[6]);
+                vSelect.appendChild(vOption);
+
+                const vTxtOption = document.createTextNode(pokemon.name);
+                vOption.appendChild(vTxtOption);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Pokemons</h1>
+
+        <select id="eSelect">
+            <option selected disabled>Elige un Pókemon</option>
+        </select>
+    </body>
+</html>
